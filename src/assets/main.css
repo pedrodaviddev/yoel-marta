@@ -1,0 +1,24 @@
+#app{
+  background-color: #e1e2e6;
+}
+@font-face {
+    font-family: 'Boungiorno Rastellino';
+    src: url('Buongiorno Rastellino.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Burgues';
+    src: url('Burgues Script Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .buongiorno-rastellino {
+    font-family: 'Boungiorno Rastellino', sans-serif;
+  }
+  
+  .burgues {
+    font-family: 'Burgues', serif;
+  }
