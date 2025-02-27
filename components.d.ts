@@ -9,5 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     Countdown: typeof import('./src/components/Countdown.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    PhoneButton: typeof import('./src/components/PhoneButton.vue')['default']
   }
 }

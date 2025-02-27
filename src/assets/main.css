@@ -22,3 +22,13 @@
   .burgues {
     font-family: 'Burgues', serif;
   }
+
+@font-face {
+    font-family: "Parfumerie";
+    src: url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.eot");
+    src: url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.svg#Parfumerie Script W00 Regular")format("svg");
+}
