@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="text-center position-relative d-flex align-center justify-center" style="height: 80vh;background-color: white">
+  <div class="text-center position-relative d-flex align-center justify-center" style="height: 40vh;background-color: white">
     <v-card-text>
       <v-row justify="center">
         <v-col cols="auto w-100">
@@ -71,7 +71,7 @@ onBeforeUnmount(() => {
       </v-row>
     </v-card-text>
 
-    <v-img class="position-absolute" height="80vh" position="top " width="auto" cover :src="image" alt=""
+    <v-img class="position-absolute" height="80vh" position="top" width="auto" cover :src="image" alt=""
            style="top:0; opacity: 0.2; filter:blur(5px);"/>
   </div>
 </template>

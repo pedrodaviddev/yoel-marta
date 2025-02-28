@@ -13,10 +13,10 @@ const snackbar = ref(false)
 
 <template>
   <div class="d-flex flex-column align-center ga-2 font-cmu font-weight-thin" style="color: #504d4d">
-    <div class="d-flex align-top ga-2 ma-2 font-italic" :class="{'flex-row-reverse': iconsOnRight}">
+    <div class="d-flex align-top ga-1 ma-2 font-italic" :class="{'flex-row-reverse': iconsOnRight}">
       <v-icon icon="mdi-content-copy" class="me-1 mt-1"
               @click="copy(number!.toString()); snackbar = true"/>
-      <a :href="`https://wa.me/34${number}`" style="color: green">
+      <a :href="`https://wa.me/34${number}`"   style="color: #504d4d">
         <v-icon icon="mdi-whatsapp"></v-icon>
       </a>
       <div>

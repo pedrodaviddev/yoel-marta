@@ -1,4 +1,4 @@
-#app {
+#app, #app > * {
     background-color: #e1e2e6;
 }
 

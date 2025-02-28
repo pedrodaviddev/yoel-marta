@@ -9,7 +9,7 @@ import {ref} from "vue";
 
 const audio = ref(new Audio(meme))
 const hasPlayed = ref(!window.location.search.includes('ivanesgay'));
-const layerVisible = ref(window.location.search.includes('ivanesgay'));
+const layerVisible = ref(true);
 window.addEventListener('scroll', () => {
   if (!hasPlayed.value) {
     audio.value.play();
@@ -19,22 +19,23 @@ window.addEventListener('scroll', () => {
 </script>
 
 <template>
-  <Transition>
-    <div class="position-relative w-100 h-100" v-show="layerVisible">
-      <v-img class="w-full ma-0 p-0 opacity-30" cover height="100vh" :src="bg"/>
-      <v-btn class="position-absolute" variant="flat" color="black"
-             style="top:50%; left: 50%; transform: translate(-50%,-50%)" @click="layerVisible = false">Descubre
-        nuestra boda
-      </v-btn>
+  <Transition name="fade" mode="out-in">
+    <div class="w-100 h-100 bg-black" v-if="layerVisible">
+      <div class="position-relative">
+        <v-img class="w-full ma-0 p-0 opacity-40 font-beautifully " position="top" style="filter: blur(4px)" cover height="100vh" :src="bg"/>
+        <v-btn class="position-absolute" variant="outlined" color="white"
+               style="top:50%; left: 50%; transform: translate(-50%,-50%)"
+               @click="layerVisible = false">Descubre
+          nuestra boda
+        </v-btn>
+      </div>
     </div>
-  </Transition>
-  <Transition>
-    <div v-show="!layerVisible">
+    <div class="w-100 h-100" v-else>
       <header class="w-full ma-0 p-0 position-relative bg-black">
         <div class="position-absolute font-buongiorno w-100 text-center title-25"
              style="left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3000">nuestro día especial
         </div>
-        <v-img class="w-full ma-0 p-0 opacity-70" cover :src="bg"/>
+        <v-img class="ma-0 p-0 opacity-70" height="70vh" lazy-src="" position="top" width="100%" cover :src="bg"/>
       </header>
 
       <main class="d-flex flex-column justify-center align-center mt-10 ga-10 px-0">
@@ -64,10 +65,10 @@ window.addEventListener('scroll', () => {
           <v-spacer class="flex-grow-1"/>
           .
           <v-spacer class="flex-grow-1"/>
-          2025
+          25
         </div>
         <div style="width: 15vw;">
-          <v-divider />
+          <v-divider/>
         </div>
         <div class="d-flex flex-column align-center px-4 text-center font-cmu " style="font-size: small">
           <v-icon icon="mdi-map-marker mb-3"/>
@@ -77,7 +78,7 @@ window.addEventListener('scroll', () => {
         LA POBLA DE FARNALS, VC 46139
       </span>
           <a href="https://maps.app.goo.gl/XW3oJVjQ5kMKS73U6" class="ma-2 mt-4">
-            <v-btn variant="outlined" color="black">
+            <v-btn variant="outlined" color="black" density="compact">
               Cómo llegar
             </v-btn>
           </a>
@@ -94,7 +95,7 @@ window.addEventListener('scroll', () => {
         <v-progress-circular color="white" indeterminate></v-progress-circular>
 
         <v-divider :thickness="2"/>
-        <div class="text-center font-newstandard" style="color: #504d4d">
+        <div class="px-4 text-center font-newstandard" style="color: #504d4d">
 
           Si tienes alguna necesidad alimentaria específica o precisas de menú infantil, no dudes en hacérnoslo saber.
           <br>
@@ -105,7 +106,7 @@ window.addEventListener('scroll', () => {
 
         <Countdown class="my-3 w-100" targetDate="09/05/2025"/>
 
-        <div class="font-beautifully text-h4 font-weight-bold">
+        <div class="font-beautifully text-h4 text-no-wrap font-weight-bold">
           ¿Quieres confirmar tu asistencia?
         </div>
         <div class="d-flex ga-2 mb-10" style="color: #504d4d">
@@ -116,6 +117,9 @@ window.addEventListener('scroll', () => {
         <v-img class="mb-3 mt-16" :src="ym" width="30vw"/>
       </main>
     </div>
+  </Transition>
+  <Transition>
+
   </Transition>
 </template>
 <style>
@@ -131,6 +135,13 @@ main {
 .title-18 {
   font-size: 18vw;
 }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
 
-
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
