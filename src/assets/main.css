@@ -1,34 +1,92 @@
-#app{
-  background-color: #e1e2e6;
+#app {
+    background-color: #e1e2e6;
 }
+
 @font-face {
     font-family: 'Boungiorno Rastellino';
     src: url('Buongiorno Rastellino.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Burgues';
     src: url('Burgues Script Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
+@font-face {
+    font-family: 'Beautifully';
+    src: url('BDScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-  .buongiorno-rastellino {
+@font-face {
+    font-family: "Literaturnaya";
+    src: url("https://db.onlinewebfonts.com/t/8b39e1317f14f2bff36a8988e4764aa8.eot");
+    src: url("https://db.onlinewebfonts.com/t/8b39e1317f14f2bff36a8988e4764aa8.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8b39e1317f14f2bff36a8988e4764aa8.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8b39e1317f14f2bff36a8988e4764aa8.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8b39e1317f14f2bff36a8988e4764aa8.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8b39e1317f14f2bff36a8988e4764aa8.svg#Literaturnaya Web")format("svg");
+}
+@font-face {
+    font-family: "CMU Serif Roman";
+    src: url("https://db.onlinewebfonts.com/t/3b24b4e4737b288d2415b418b8c7aaef.eot");
+    src: url("https://db.onlinewebfonts.com/t/3b24b4e4737b288d2415b418b8c7aaef.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3b24b4e4737b288d2415b418b8c7aaef.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3b24b4e4737b288d2415b418b8c7aaef.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3b24b4e4737b288d2415b418b8c7aaef.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3b24b4e4737b288d2415b418b8c7aaef.svg#CMU Serif Roman")format("svg");
+}
+.font-cmu {
+    font-family: 'CMU Serif Roman', serif;
+}
+.font-literaturnaya {
+    font-family: 'Literaturnaya', sans-serif;
+}
+
+.font-buongiorno {
     font-family: 'Boungiorno Rastellino', sans-serif;
-  }
-  
-  .burgues {
+}
+
+.font-parfumerie {
+    font-family: 'Parfumerie', sans-serif;
+}
+
+.font-burgues {
     font-family: 'Burgues', serif;
-  }
+}
+
+.font-newstandard {
+    font-family: 'NewStandard', serif;
+}
+
+.font-beautifully {
+    font-family: 'Beautifully', serif
+}
+
+.v-divider {
+    width: 20vw;
+}
+
+@font-face {
+    font-family: "NewStandard";
+    src: url("https://db.onlinewebfonts.com/t/91d891a958a19d85d7ae7d66e06af26c.eot");
+    src: url("https://db.onlinewebfonts.com/t/91d891a958a19d85d7ae7d66e06af26c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/91d891a958a19d85d7ae7d66e06af26c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/91d891a958a19d85d7ae7d66e06af26c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/91d891a958a19d85d7ae7d66e06af26c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/91d891a958a19d85d7ae7d66e06af26c.svg#NewStandard W08 Regular")format("svg");
+}
 
 @font-face {
     font-family: "Parfumerie";
     src: url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.eot");
-    src: url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.svg#Parfumerie Script W00 Regular")format("svg");
+    src: url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5aed2eb513548a59f3e2bff1bba07d12.svg#Parfumerie Script W00 Regular") format("svg");
 }

@@ -31,37 +31,45 @@ window.addEventListener('scroll', () => {
   <Transition>
     <div v-show="!layerVisible">
       <header class="w-full ma-0 p-0 position-relative bg-black">
-        <div class="position-absolute buongiorno-rastellino text-h1 w-100 text-center"
+        <div class="position-absolute font-buongiorno w-100 text-center title-25"
              style="left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3000">nuestro día especial
         </div>
         <v-img class="w-full ma-0 p-0 opacity-70" cover :src="bg"/>
       </header>
 
       <main class="d-flex flex-column justify-center align-center mt-10 ga-10 px-0">
-        <div class="burgues text-h4 text-center" style="color: #504d4d">Acompáñanos</div>
+        <div class="font-parfumerie text-center title-18">Acompáñanos</div>
         <div style="width: 15vw;">
-          <v-divider color="#504d4d"/>
+          <v-divider :thickness="2"/>
         </div>
-        <div class="px-6 text-center">
+        <div class="px-6 text-center font-newstandard">
           Únete a nosotros para celebrar el comienzo de nuestra historia juntos. Será un día lleno
           de amor, alegría y
           momentos inolvidables.
 
           <div class="mt-0 pt-0">¡Esperamos contar contigo!</div>
-          <div style="color: #504d4d">
-            Yoel y Marta
+          <div class="font-beautifully text-h4 pt-2">
+            yoel y marta
           </div>
         </div>
         <div style="width: 15vw;">
-          <v-divider color="#504d4d"/>
+          <v-divider :thickness="2"/>
         </div>
-        <div style="color: #504d4d">
-          05 . 09 . 2025
+        <div class="font-literaturnaya d-flex w-100 px-13 text-h5" style="max-width: 600px">
+          05
+          <v-spacer class="flex-grow-1"/>
+          .
+          <v-spacer class="flex-grow-1"/>
+          09
+          <v-spacer class="flex-grow-1"/>
+          .
+          <v-spacer class="flex-grow-1"/>
+          2025
         </div>
         <div style="width: 15vw;">
-          <v-divider color="#504d4d"/>
+          <v-divider />
         </div>
-        <div class="d-flex flex-column align-center px-4 text-center" style="color: #504d4d">
+        <div class="d-flex flex-column align-center px-4 text-center font-cmu " style="font-size: small">
           <v-icon icon="mdi-map-marker mb-3"/>
           <span>
         ALQUERÍA KUKALA - RESTAURANTE, BODAS Y EVENTOS
@@ -75,29 +83,29 @@ window.addEventListener('scroll', () => {
           </a>
         </div>
         <div style="width: 15vw;">
-          <v-divider color="#504d4d"/>
+          <v-divider :thickness="2"/>
         </div>
         <div class="font-parfumerie text-h2" style="color: #504d4d">
           Programa
         </div>
-        <div style="color: #504d4d">
+        <div class="font-newstandard">
           (Próximamente daremos detalles)
         </div>
         <v-progress-circular color="white" indeterminate></v-progress-circular>
 
-        <v-divider color="#504d4d"/>
-        <div class="text-center" style="color: #504d4d">
+        <v-divider :thickness="2"/>
+        <div class="text-center font-newstandard" style="color: #504d4d">
 
           Si tienes alguna necesidad alimentaria específica o precisas de menú infantil, no dudes en hacérnoslo saber.
           <br>
           ¡Queremos que todos disfrutéis del banquete!
         </div>
 
-        <v-divider color="#504d4d"/>
+        <v-divider :thickness="2"/>
 
         <Countdown class="my-3 w-100" targetDate="09/05/2025"/>
 
-        <div style="color: #504d4d">
+        <div class="font-beautifully text-h4 font-weight-bold">
           ¿Quieres confirmar tu asistencia?
         </div>
         <div class="d-flex ga-2 mb-10" style="color: #504d4d">
@@ -113,19 +121,16 @@ window.addEventListener('scroll', () => {
 <style>
 main {
   color: #504d4d;
+  font-size: large;
 }
 
-.font-parfumerie {
-  font-family: 'Parfumerie', sans-serif;
+.title-25 {
+  font-size: 25vw;
 }
 
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
+.title-18 {
+  font-size: 18vw;
 }
 
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
+
 </style>

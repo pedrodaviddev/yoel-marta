@@ -12,9 +12,9 @@ const snackbar = ref(false)
 </script>
 
 <template>
-  <div class="d-flex flex-column align-center ga-2" style="color: #504d4d">
-    <div class="d-flex align-top ga-2 ma-2" :class="{'flex-row-reverse': iconsOnRight}">
-      <v-icon icon="mdi-content-copy" class="me-1"
+  <div class="d-flex flex-column align-center ga-2 font-cmu font-weight-thin" style="color: #504d4d">
+    <div class="d-flex align-top ga-2 ma-2 font-italic" :class="{'flex-row-reverse': iconsOnRight}">
+      <v-icon icon="mdi-content-copy" class="me-1 mt-1"
               @click="copy(number!.toString()); snackbar = true"/>
       <a :href="`https://wa.me/34${number}`" style="color: green">
         <v-icon icon="mdi-whatsapp"></v-icon>
