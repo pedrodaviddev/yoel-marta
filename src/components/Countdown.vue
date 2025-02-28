@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="text-center position-relative d-flex align-center" style="height: 80vh;background-color: white">
+  <div class="text-center position-relative d-flex align-center justify-center" style="height: 80vh;background-color: white">
     <v-card-text>
       <v-row justify="center">
         <v-col cols="auto w-100">

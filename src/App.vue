@@ -49,7 +49,7 @@ window.addEventListener('scroll', () => {
 
           <div class="mt-0 pt-0">¡Esperamos contar contigo!</div>
           <div class="font-beautifully text-h4 pt-2">
-            yoel y marta
+            Yoel y Marta
           </div>
         </div>
         <div style="width: 15vw;">
