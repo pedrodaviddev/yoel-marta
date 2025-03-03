@@ -104,7 +104,7 @@ window.addEventListener('scroll', () => {
 
         <v-divider :thickness="2"/>
 
-        <Countdown class="my-3 w-100" targetDate="09/05/2025"/>
+        <Countdown class="my-3 w-100" targetDate="2025-09-05T17:00:00.000Z"/>
 
         <div class="font-beautifully text-h4 text-no-wrap font-weight-bold">
           ¿Quieres confirmar tu asistencia?
