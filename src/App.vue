@@ -13,7 +13,7 @@ import { ref } from "vue";
 
 const audio = ref(new Audio(meme))
 const hasPlayed = ref(!window.location.search.includes('ivanesgay'));
-const layerVisible = ref(!true);
+const layerVisible = ref(true);
 window.addEventListener('scroll', () => {
   if (!hasPlayed.value) {
     audio.value.play();
