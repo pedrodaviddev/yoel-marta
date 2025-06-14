@@ -129,7 +129,7 @@ window.addEventListener('scroll', () => {
           <div class="mt-2">-</div>
           <PhoneButton :number="684098105" name="M" :icons-on-right="true"/>
         </div>
-        <span class="my-8 text-caption">Fecha límite para confirmar asistencia 15 Junio 2025</span>
+        <span class="my-8 text-caption">Fecha límite para confirmar asistencia 30 Junio 2025</span>
         <v-img class="mb-3 mt-8" :src="ym" width="30vw"/>
       </main>
     </div>
